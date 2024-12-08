@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Noto+Sans+TC:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:wdth,wght@92.1,300&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Sans+TC:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:wdth,wght@92.1,300&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="responsivo.css">
+
+  <link rel="icon" href="./icon.png">
+  <title> Portfólio | Kailane Rodrigues - desenvolvedora front-end</title>
+
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#topic1">Home</a>
+    <a href="#topic2">Projetos</a>
+    <a href="#topic3">Contato</a>
+ 
+  </nav>
+  <section id="topic1">
+
+    
+    <div class="abc">
+      
+      <h3>SOBRE MIM</h3>
+      <h2 class="kai">Kailane Rodrigues</h2>
+
+      <h4 class="sobremim"> 
+        desenvolvedora front-end 
+        com conhecimentos em HTML, CSS e JavaScript, atualmente estudando back-end. Estou cursando Análise e Desenvolvimento de Sistemas (ADS) e sempre buscando aprender mais para criar projetos completos e eficientes. vamos tornar seus projetos realidade?</h4>
+    </div>
+
+    <div class="Formulario">
+
+      <img  class="disco" src="./globo.png" alt="disco">
+
+    <h2>CONTATE-ME</h2>
+    <form id="contact-form" method="POST">
+      <div class="form-group">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Telefone:</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="message"></label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+    
+
+
+  </section>
+
+  <section id="topic2"> 
+    <div class="projeto">
+     
+      <iframe class="projetos" src="https://lanssea.github.io/ADVENTURE-TIME/" title="Visualização"></iframe>
+      <div class="tooltip">
+        <a href="https://lanssea.github.io/ADVENTURE-TIME/" target="_blank">Acesse o Projeto</a>
+      </div>
+    
+      
+      <iframe class="projetos" src="https://lanssea.github.io/STUDIO-GHIBLI-PROJETO-FILMES/" title="Visualização"></iframe>
+
+      <div class="tooltip2">
+        <a href="https://lanssea.github.io/STUDIO-GHIBLI-PROJETO-FILMES/" target="_blank">Acesse o Projeto</a>
+      </div>
+    </div>
+    
+    <iframe class="projeto-destaque" src="https://lanssea.github.io/MEDIDOR-DE-CLIMA/" ></iframe>
+    <div class="tooltip3">
+      <a href="https://lanssea.github.io/MEDIDOR-DE-CLIMA/" target="_blank">Acesse o Projeto</a>
+    </div>
+   
+    <div class="menu-bolinha">
+      <button onclick="mostrarConteudo(0)" class="bolinha"></button> 
+      <button onclick="mostrarConteudo(1)" class="bolinha"></button> 
+      <!--  <button onclick="mostrarConteudo(2)" class="bolinha"></button>  --> 
+    </div>
+  
+   
+    <div class="projeto oculto">
+      <iframe class="projetos" src="https://lanssea.github.io/ONE-PIECE-PERSONAGENS-"></iframe>
+      <div class="tooltip">
+        <a href="https://lanssea.github.io/ONE-PIECE-PERSONAGENS-" target="_blank">Acesse o Projeto</a>
+      </div>
+      <iframe class="projetos" src="https://lanssea.github.io/PROJETO-POKEDEVS/" >
+      </iframe>
+      <div class="tooltip2">
+        <a href="https://lanssea.github.io/PROJETO-POKEDEVS/" target="_blank">Acesse o Projeto</a>
+      </div>
+    </div>
+    
+    <iframe class="projeto-destaque oculto" src="https://lanssea.github.io/MEDIDOR-DE-CLIMA/" title="Visualização"></iframe>
+    <div class="tooltip3">
+      <a href="https://lanssea.github.io/MEDIDOR-DE-CLIMA/" target="_blank">Acesse o Projeto</a>
+    </div>
+  </section>
+  
+  
+  
+  
+  
+  
+  
+  <section id="topic3">
+    <div class="slide-container">
+      <div class="slide">
+        <div class="contatos">
+          <h2>Vamos Conversar? </h2>
+    <p> Se você deseja saber mais sobre meu trabalho ou discutir ideias, estou à disposição.</p>
+    <p class="telemeio"> ✉ E-mail: kailanefreitas892@gmail.com ☏ Telefone:(85) 99422-6344</p>
+          <a href="KAILANE RODRIGUES - CURRICULO TI.pdf" download >baixar curriculo</a>
+        </div>
+      </div>
+      
+      <div class="slide">
+        <img class="github" src="./github.png" >
+        <div class="github-descricao">
+          <p>GitHub é uma plataforma de hospedagem de código-fonte e controle de versão que permite desenvolvedores colaborarem em projetos de forma eficiente. 
+            Você pode acessar meus projetos no GitHub clicando aqui, onde compartilho algumas das minhas criações, ideias e soluções técnicas.</p>
+          <a href="https://github.com/lanssea" target="_blank">Acesse Aqui</a>
+        </div>
+      </div>
+      <div class="slide">
+        <img class="linkdin" src="./linkdin.png">
+        <div class="linkdin-descricao">
+          <p>LinkedIn é a rede social profissional ideal para conectar-se com pessoas, empresas e oportunidades da sua área. Explore meu perfil e conheça mais sobre minhas experiências e projetos.</p>
+          <a href="www.linkedin.com/in/lansea" target="_blank">Acesse Aqui</a>
+        </div>
+      </div>
+    
+    </div>
+    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+    <button class="next" onclick="changeSlide(1)">&#10095;</button>  
+  </section>
+  
+  
+  <script src="script.js"></script>
+</body>
+</html>

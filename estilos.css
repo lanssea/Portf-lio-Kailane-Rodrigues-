@@ -1,0 +1,488 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+nav {
+  position: fixed;
+  top: 5%;
+  left: 50%; 
+  transform: translateX(-50%); 
+  width: 1207px;
+  background: #c0b8b7;
+  border-radius: 18px;
+  color: white;
+  padding: 10px;
+  z-index: 1000;
+  opacity: 0.5;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+nav a:hover
+{
+  color:black;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+section {
+    height: 100vh; 
+    padding: 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center; 
+    gap: 20px; 
+    font-size: 24px;
+    border-bottom: 1px solid rgba(220, 220, 220, 0.5); /* Linha de transição */
+    backdrop-filter: blur(10px); /* Aplica o desfoque */
+    -webkit-backdrop-filter: blur(20px); /* Suporte para Safari */
+    z-index: 9;
+  }
+  
+
+ section:nth-child(odd) {
+    background: radial-gradient(circle, rgba(128, 128, 128, 0.7) 5%, rgba(220, 220, 220, 0.5) 50%, rgba(240, 240, 240, 0.3) 100%);
+
+
+}
+
+section:nth-child(even) {
+    background: radial-gradient(circle, rgba(128, 128, 128, 0.7) 5%, rgba(220, 220, 220, 0.5) 50%, rgba(240, 240, 240, 0.3) 100%);
+
+
+}
+
+.abc {
+    background-color: #c0b8b8;
+    border-radius: 8px;
+    width: 702.7px;
+    height: 273px;
+    position: relative; 
+    margin-top: 4%; 
+    left: 300px; 
+    transform: translateX(-50%); /* Ajusta para centralizar totalmente */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+
+  }
+  
+ 
+
+  .Formulario {
+    border-radius: 8px;
+    background-color: #c0b8b8;
+    position: relative; /* Define um contexto de empilhamento */
+    width: 280px;
+    height: 468.4px;
+    margin-top: 4%; 
+    left: 70px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+   /* Garante que esteja acima do .disco */
+}
+  
+
+  .Formulario h2 {
+    text-align: center;        /* Centraliza o título horizontalmente */
+    color: #333;               /* Cor do texto */
+    margin-bottom: 10px;       /* Espaço abaixo do título */
+    font-size: 10px;           /* Reduz o tamanho da fonte */
+    width: 100%;               /* Garante que o título ocupe a largura inteira */
+    padding: 3px;             /* Padding de 10px em todos os lados */
+    box-sizing: border-box;    /* Inclui o padding dentro da largura */
+  }
+  .Formulario .form-group {
+    width: 100%; /* Garante que o grupo ocupe toda a largura disponível */
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os campos de input e textarea */
+    position: relative;
+    z-index: 5;
+  }
+  
+  .Formulario .form-group label {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    font-size: 12px;
+    color: #888;
+    pointer-events: none;
+    transition: 0.3s ease;
+  }
+  
+  .Formulario .form-group input::placeholder,
+  .Formulario .form-group textarea::placeholder {
+    color: #888;
+    opacity: 1;
+  }
+  
+  .Formulario .form-group input,
+  .Formulario .form-group textarea {
+    width: 85%; /* Reduz a largura para deixar mais centrado */
+    padding: 12px;
+    padding-left: 60px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 12px;
+    background: radial-gradient(circle, rgba(128, 128, 128, 0.1) 20%, rgba(240, 240, 240, 1) 70%);
+    color: #fff;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .Formulario .form-group input:focus,
+  .Formulario .form-group textarea:focus {
+    outline: none;
+    border-color: #999;
+    box-shadow: 0 0 5px rgba(153, 153, 153, 0.2);
+  }
+  
+  .Formulario .form-group input:focus + label,
+  .Formulario .form-group input:not(:placeholder-shown) + label,
+  .Formulario .form-group textarea:focus + label,
+  .Formulario .form-group textarea:not(:placeholder-shown) + label {
+    top: -10px;
+    font-size: 12px;
+    color: #999;
+  }
+  
+  .Formulario .form-group textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  .Formulario button {
+    width: 70%;
+    padding: 12px;
+    background-color: #999;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 15%;  /* Ajuste a porcentagem conforme necessário */
+}
+
+
+  .Formulario .form-group textarea {
+    resize: vertical;
+    height: 200px;
+    margin-top: 40px; }
+
+  
+  .Formulario button:hover {
+    background-color: #888;
+  }
+  
+  .Formulario button:active {
+    background-color: #777;
+  }
+
+  .kai {
+    font-family: "Great Vibes", cursive;
+    font-weight: lighter;
+    font-size: 65px;
+    text-align: center; 
+    word-wrap: break-word;
+    width: 250px; /* Largura fixa para a caixa */
+    height: 200px; /* Altura fixa para a caixa */
+    position: absolute; 
+    top: 39%; 
+    transform: translateY(-50%);
+    right: 10%; 
+    line-height: 0.99; 
+    padding: 10px; 
+    box-sizing: border-box; 
+    overflow: hidden; 
+    white-space: normal; 
+     transition: background 0.3s ease, filter 0.3s ease;
+  }
+  
+  
+  
+  .kai:hover {
+    cursor: pointer;
+    background: linear-gradient(to right, gray, white); 
+    -webkit-background-clip: text; 
+    color: transparent; 
+  }
+  
+
+h3 {
+    font-family: "Libre Baskerville";
+    margin-left: auto; /* Não é necessário ajustar isso, já que o objetivo é mover para a esquerda */
+    text-align: right;  /* Alinha o texto à direita */
+    margin-right: 130px;  /* Diminui o valor para mover o texto para a esquerda */
+    line-height: 5.90;
+    font-weight: lighter;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+ p, a{
+    font-family: "Libre Baskerville";
+    text-decoration: none; 
+    color: inherit;  
+
+}
+
+.disco{
+  position:absolute;
+  z-index:2;
+}
+
+.sobremim {
+  font-family: "Libre Baskerville";
+  width: 35%; 
+  height: 75%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  background: radial-gradient(circle, rgba(128, 128, 128, 0.1) 20%, rgba(240, 240, 240, 1) 70%);
+  position: relative; 
+  top: -80px; 
+  left: 10px;
+  
+
+  display: flex;
+  justify-content: center; 
+  align-items: center; /* Centraliza verticalmente */
+  text-align: left; /* Alinha o texto à esquerda */
+  padding: 20px; /* Espaçamento interno para que o texto não fique colado nas bordas */
+  
+  /* Deixando as letras mais finas e espaçadas */
+  font-weight: 300; /* Fonte mais fina */
+  letter-spacing: 1px; /* Espaçamento entre as letras */
+}
+
+.projeto-destaque {
+  position: absolute;
+  border: none;
+  left: 70%; 
+  transform: scale(0.5); /* Reduz o conteúdo interno */
+  transform-origin: 0 0; /* Ajusta a escala a partir do canto superior esquerdo */
+  width: 600px; /* Ajusta a largura para 100% do contêiner pai */
+  height: 970px; /* Aumenta a altura do iframe */
+  border-radius: 18px; /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+  display: flex; /* Define o layout flex */
+  justify-content: center; /* Centraliza o conteúdo dentro do projeto-destaque */
+  align-items: center; /* Centraliza verticalmente */
+  overflow: hidden; /* Remove barras de rolagem */
+  margin-top: 4%; /* Ajuste o valor se necessário */
+}
+
+
+.projetos {
+  position: relative; 
+  flex-wrap: wrap;
+  border: none;
+  transform-origin: 0 0;
+  transform: scale(0.5); 
+  width: 1600px; 
+  height: 450px; 
+  border-radius: 18px;
+  border: 1px solid #ccc; 
+  margin-right: 10px;
+  margin-bottom: -250px; 
+  margin-top: 6%; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); 
+}
+
+
+.projeto{ 
+  transform: translateX(-15%); 
+  height: 550px; 
+  width:900px;
+}
+
+
+.menu-bolinha {
+  display: flex;
+  flex-direction: column; /* Coloca as bolinhas na vertical */
+  position: fixed; /* Fixa as bolinhas na tela */
+  top: 50%; /* Posiciona no meio da tela */
+  right:  5%; /* Alinha à direita com um pequeno espaçamento */
+  transform: translateY(-50%); /* Ajusta para ficar centralizado verticalmente */
+}
+
+.bolinha {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 5px 0; /* Espaçamento entre as bolinhas */
+  border: none;
+  cursor: pointer;
+}
+
+.bolinha:hover {
+  background-color: #888;
+}
+
+/* Estilo para esconder os conteúdos */
+.oculto {
+  display: none;
+}
+
+.github, .linkdin{
+ 
+  transform: translateX(-15%);
+  width: 60%;
+  height: 50%;
+  margin-top: 5%;
+  margin-left: -5%;
+  border-radius: 18px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease; 
+}
+
+.github:hover, .linkdin:hover {
+  transform: translateX(-15%) scale(1.1); /* Aumenta o tamanho ao passar o cursor */
+}
+
+.github-descricao {
+  background: radial-gradient(circle, rgba(12, 18, 20, 0.7) 5%, rgba(12, 18, 20, 0.5) 50%, rgba(12, 18, 20, 0.3) 100%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 18px;
+  margin-top: -29%;
+  margin-left: 78%;
+  position:relative;
+  width: 20%;
+  height: 400px;
+  transition: transform 0.3s ease; 
+}
+
+.github-descricao:hover, .linkdin-descricao:hover {
+  transform: translateX(-15%) scale(1.1); 
+}
+
+.github-descricao p, a  {
+
+  width: 70%;            
+  font-size: 13px;
+  padding: 60px 37px;
+  text-align: center;    
+  
+}
+
+.linkdin-descricao p, a {
+
+  width: 70%;              
+  font-size: 13px;
+  padding: 60px 37px;
+  text-align: center;       
+  
+}
+
+.linkdin-descricao{
+  background: radial-gradient(circle, rgba(12, 18, 20, 0.7) 5%, rgba(12, 18, 20, 0.5) 50%, rgba(12, 18, 20, 0.3) 100%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 18px;
+  margin-top: -32%;
+  margin-left: 78%;
+  position:relative;
+  width: 20%;
+  height: 400px;
+  transition: transform 0.3s ease; 
+}
+.tooltip{
+
+  position: absolute;
+  top: 52%;
+  width: 89.2%;
+  height: 5%;
+  font-size: 10px;
+}
+
+
+.tooltip2{
+  position: absolute;
+  top: 99.5%;
+  width: 89.2%;
+  height: 5%;
+  font-size: 10px;
+ 
+}
+
+.tooltip3 {
+  position: absolute;
+  top: 600px;  /* 50% + 10% para empurrar para baixo */
+  left: 115%;  /* Centraliza horizontalmente */
+  transform: translateX(-50%);  /* Garante que o elemento fique realmente centralizado */
+  width: 89.2%;
+  height: 5%;
+  font-size: 10px;
+}
+
+
+.slide-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 200%; 
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  flex-wrap: nowrap;
+}
+
+.slide {
+  flex: 1 0 100%; 
+  position: relative;
+  text-align: center;
+}
+
+button.prev,
+button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.7); /* Torna o fundo mais escuro */
+  color: white;
+  border: none;
+  font-size: 20px; /* Ajusta o tamanho do ícone */
+  width: 40px; /* Define largura fixa */
+  height: 40px; /* Define altura fixa */
+  cursor: pointer;
+  border-radius: 50%; /* Torna os botões completamente redondos */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra elegante */
+  transition: transform 0.2s, background 0.2s; /* Adiciona transição suave */
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+
+button.prev:hover,
+button.next:hover {
+  transform: translateY(-50%) scale(1.1); /* Aumenta o botão ao passar o mouse */
+  background: rgba(0, 0, 0, 0.9); /* Escurece mais o fundo */
+}
+
+.telemeio{
+ 
+  font-size: 13px;
+  width: 22%;
+  text-align: left;   
+  margin-left: 40%;
+}
+.contatos a{
+
+ padding: 10px;
+}
